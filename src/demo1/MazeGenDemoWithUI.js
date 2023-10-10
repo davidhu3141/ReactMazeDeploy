@@ -155,7 +155,7 @@ const MazeGenDemoWithUI = () => {
                         return <div key={index} style={{ maxWidth: 600, borderColor: "#ffffff", borderWidth: '2px', borderStyle: 'solid', backgroundColor: "#e8e8e8" }} >
                             <label>》 生成方式: {fil.type} </label>
                             <label>起始點: {fil.startPos} </label>
-                            <label>總步數: {fil.totalSteps} </label>
+                            {/* <label>總步數: {fil.totalSteps} </label> */}
                             {fil.type == "DFS"
                                 ? <label> 各方向機率: {(fil.probs || "").toString()} </label>
                                 : <label> 鑽入程度: {1 / fil.power} </label>

@@ -64,7 +64,7 @@ const GeneratorInputPanel = ({ addGenerator }) => {
                     <option value="rand">Random</option>
                 </select>
             </label>
-            <label>
+            {/* <label>
                 總步數:
                 <input
                     type="number"
@@ -73,7 +73,7 @@ const GeneratorInputPanel = ({ addGenerator }) => {
                     value={inputObject.totalSteps}
                     onChange={handleInputChange}
                 />
-            </label>
+            </label> */}
 
             {
                 inputObject.type == "DFS"
@@ -92,7 +92,7 @@ const GeneratorInputPanel = ({ addGenerator }) => {
                                 />
                             ))}
                         </label>
-                        <label>
+                        {/* <label>
                             回溯距離:
                             <input
                                 type="number"
@@ -101,7 +101,7 @@ const GeneratorInputPanel = ({ addGenerator }) => {
                                 value={inputObject.rollBackDist}
                                 onChange={handleInputChange}
                             />
-                        </label>
+                        </label> */}
                     </span>
                     : <span>
                         均勻度:
